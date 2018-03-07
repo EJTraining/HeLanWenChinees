@@ -1,0 +1,73 @@
+
+
+body {
+    margin:0;
+    background-color:white;
+  font-size: 16px;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+header {
+   
+    background-color:#DE2910;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 140%;
+
+}
+
+
+.word-list {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-content: center;
+     
+
+}
+
+.main-header {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.nav-item {
+    color: #FFDE00;
+   
+    padding-left: 15px;
+}
+
+main {
+    width: 100vw;
+    font-size: 120%;
+}
+
+.main-item__day {
+    /* width:10vw; */
+    flex: 1 1 10vw;
+}
+.main-item__chinese {
+    /* width: 10vw; */
+    flex: 1 1 10vw;
+}
+.main-item {
+    text-align: center;
+    flex: 2 1 26vw;
+ 
+    
+}
+
+
+
+
+
