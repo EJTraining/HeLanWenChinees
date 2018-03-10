@@ -16,7 +16,7 @@ body {
 
 }
 
-header {
+nav {
    
     background-color:#DE2910;
     display: flex;
@@ -25,13 +25,37 @@ header {
     font-size: 140%;
 
 }
+.landing-page__title {
+    height: 100vh;
+    
+    background-image: url("img/summer.jpg");
+    background-size: cover;
+    opacity: 0.8;
+}
+.landing-page__title--main {
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+    font-weight: 800;
+    padding-top: 5vh;
+    color: white;
+    opacity: 1;
+}
 
-
+.landing-page__title--second {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    
+    color: #006CB4;
+    opacity: 1;
+}
 .word-list {
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    align-content: center;
+
+
      
 
 }
@@ -41,31 +65,90 @@ header {
     color: white;
 }
 
-.nav-item {
+.nav-item a {
     color: #FFDE00;
    
     padding-left: 15px;
 }
 
-main {
+/* main {
     width: 100vw;
     font-size: 120%;
+    
+} */
+
+.main-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 120px;
+    border: solid black 2px;
+    margin: 5px;
+   
+    
+    
+
+
+}
+
+.main-panel:hover .main-item__nl  {
+    opacity: 1;
+}
+
+.main-panel:hover .main-item__eng  {
+    opacity: 1;
+}
+
+.main-item {
+    text-align: center;
+    transition: opacity 0.5s;
+    /* flex: 2 1 26vw; */
 }
 
 .main-item__day {
-    /* width:10vw; */
-    flex: 1 1 10vw;
+    border-bottom: black 2px solid;
+    color: #FFDE00;
+    background-color:#DE2910;
+
 }
 .main-item__chinese {
-    /* width: 10vw; */
-    flex: 1 1 10vw;
+    opacity: 1;
 }
-.main-item {
-    text-align: center;
-    flex: 2 1 26vw;
- 
-    
+
+.main-item__nl {
+    opacity: 0;
 }
+
+.main-item__eng {
+    opacity: 0;
+}
+
+
+
+img {
+    width: 100vw;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+
+ .main-panel{
+     flex: 1 1 20vw;
+     font-size: 1.5rem;
+ }
+}
+
+@media screen and (max-width: 600px){
+
+ .main-panel{
+     flex: 1 1 45vw;
+     font-size: 2rem;
+ }
+}
+
+
 
 
 
