@@ -74,7 +74,7 @@ main {
     color: #FFDE00;
     background-color:#DE2910;
     border: 2px solid black;
-    
+    text-shadow: -1px -1px black;
 }
 .main-header {
     background-color: lightskyblue;
